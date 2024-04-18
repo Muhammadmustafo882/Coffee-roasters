@@ -28,7 +28,7 @@
     --hero-bg: #F1D3B0;
     --grey: #F5F5EC;
     --brown: #C99B67;
-    --green: #086752;
+    --green: #0A775F;
     --text-color: #333;
 }
 
@@ -42,6 +42,10 @@ html{
 *::before,
 *::after{
     box-sizing: inherit;
+}
+
+*:focus{
+    outline: 2px dotted var(--green);
 }
 
 body{
@@ -77,10 +81,11 @@ img{
 
 .header-hero-wrapper {
     background-image: url("../img/Group\ 3613.jpg");
+    background-color: var(--hero-bg);
 }
 
 .header {
-    padding: 40px 0;
+    padding:40px 0 45px 0;
 }
 
 .header-container {
@@ -141,6 +146,70 @@ img{
 
 .sitenav-link:active{
     opacity: 0.6;
+}
+
+.hero-container {
+    display: flex;
+    padding: 0;
+}
+
+.hero-content {
+    widows: 100%;
+    max-width: 730;
+    padding: 110px 133px 250px 150px;
+}
+
+.hero-header {
+    color: #000;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    margin: 24px;
+}
+
+.hero-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+}
+
+.hero-text:not(:last-child){
+    margin-bottom: 24px;
+}
+
+.hero-img{
+    width: 710px;
+    height: 596px;
+}
+
+.hero-img-index{
+    height: 696px;
+}
+
+.button {
+    padding: 16px 24px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1;
+    text-decoration: none;
+}
+
+.button:focus{
+    opacity: 0.8;
+}
+
+.button:hover{
+    opacity: 0.6;
+}
+
+.button-green{
+    background-color: var(--green);
+    color: #fff;
 }
 
 
