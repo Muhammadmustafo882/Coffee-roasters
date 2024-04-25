@@ -25,7 +25,7 @@
 
 :root{
     --font-family: "Roboto", "Arial", "sans-serif";
-    --hero-bg: #F1D3B0;
+    --hero-bg: #F3D7B7;
     --grey: #F5F5EC;
     --brown: #C99B67;
     --green: #0A775F;
@@ -165,7 +165,7 @@ img{
     font-weight: 700;
     line-height: normal;
     margin: 0;
-    margin: 24px;
+    margin-bottom: 24px;
 }
 
 .hero-text {
